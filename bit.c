@@ -1,14 +1,10 @@
 #include<stdio.h>
-
 main()
 {
 unsigned short  int n=1;
 
 int x=sizeof(n);
-
-
 printf("\n ---------- complement all bits ------ \n");
-
 
 printf("\n  %d  \n", x);
 
@@ -28,12 +24,9 @@ num = n>>1;
 
 printf("\n %d \n ", num );
 
-
-
 num= n<< 15;
 
 printf("\n   %d  \n", num);
-
 
 
 ///////////rotate\\\\\\\\\\\\\
@@ -54,14 +47,7 @@ num = 128;
           //
 
 
-/* NOTE :  for 32 bits --> left or right shift should be 32-1 to go from msb to lsb and vice versa.
-*/
-
-
- 
-
-
-
+/* NOTE :  for 32 bits --> left or right shift should be 32-1 to go from msb to lsb and vice versa.*/
 
 
 //lets rotate one time 
@@ -69,9 +55,6 @@ num = 128;
 num =1;
 
 unsigned short  int msb = 0;
-
-
-
 msb = num & 1;
 num = num >> 1;
 
@@ -106,10 +89,5 @@ for (i=1;i <=8; i++)
 printf(	" \n num value -->  %d  \n ", num );
 
 }
-
-
 printf (" \n  final  num --->  %d ", num );
-
 }
-
-
